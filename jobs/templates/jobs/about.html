@@ -27,45 +27,21 @@
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
           <a class="nav-item nav-link" href="{% url 'photography' %}">Photography</a>
-          <!-- <a class="nav-item nav-link" href="#">Contact</a> -->
         </div>
       </div>
     </nav>
   </header>
 
   <main role="main">
-
-    <section class="jumbotron text-center">
-      <div class="container">
-        <h1 class="jumbotron-heading">Hi, I'm Will</h1><br>
-        <p class="lead text-muted">Welcome to my personal website! Check out my awesome projects! <br>Want to contact me? Feel free to <a href="mailto:willowuama@gmail.com" target="_top">Email</a> me.<br> All source code can be found on my Github.</p>
-        <p>
-          <a href="https://github.com/willowuama" class="btn btn-primary my-2">GitHub</a>
-        </p>
-      </div>
-    </section>
-
-    <div class="album py-5 bg-light">
-      <div class="container">
-
-        <div class="row">
-
-          {% for job in jobs.all %}
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="{{ jobs.image.url }}">
-              <div class="card-body">
-                <p class="card-text">{{ job.summary }}</p>
-          {% endfor %}
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="container text-center text-muted">
+      <br><br><h1 class="text-center">William Owuama Jr.</h1><br>
+      <image src="{% static 'albumtemp.jpg' %}" class="rounded mx-auto d-block" height="350"><br>
+        <a href="https://twitter.com/willowuama" class="btn btn-primary my-2">Twitter</a><br><br>
+      <h4>I find it hard to write things about myself. I always find myself stuck between sounding way too professional or way too casual thats when a colleague of mine said “Why does it matter”. So here goes nothing<br><br><br>
+I was born and raised in Houston, Texas where I’m proud to say I still reside. Since I was little I always loved to fiddle with any bit of technology I could get my hands on. Well somewhere between Middle and High School I somehow forgot about my love of all things tech (minus video games of course).<br><br><br>
+Flash forward a couple of years past High School (3 to be exact), I found myself on a path nowhere near anything tech related and I was miserable. Thats when I was introduced to the world of Programming and I found my childhood interest and desire to fiddle had once returned.<br><br><br>
+Since then I dropped everything and made the bold decision to pursue the tech field. Now I find myself indulging on hours of code and geeking out over the countless innovations that seem to pop up on my timelines every other day.</h4><br><br><br>
     </div>
-
   </main>
 
   <footer class="text-muted">
